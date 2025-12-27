@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+crag-venv/
+.venv/
+venv/
+ENV/
+env/
+
+# Local env files
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Build / distributions
+dist/
+build/
+*.egg-info/
+
+# FAISS index and data
+FAISS_store/
+sources/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
