@@ -33,11 +33,15 @@ if not OPENAI_API_KEY:
 # ============================================================
 # CONFIG
 # ============================================================
-PDF_PATH = "./sources/Third-Avartana-opens-at-ITC-M.pdf"
+cwd = os.getcwd()
+print("📁 Current working directory:", cwd)
+
+PDF_PATH = f"{cwd}/sources/Third-Avartana-opens-at-ITC-M.pdf"
+
 
 # .stem extracts the filename without the extension
 filename_without_extension = Path(PDF_PATH).stem
-FAISS_PATH = f"./FAISS_store/{filename_without_extension}_index"
+FAISS_PATH = f"{cwd}/FAISS_store/{filename_without_extension}_index"
 
 SIMILARITY_SKIP_THRESHOLD = 0.85   # Skip evaluation if confident
 
